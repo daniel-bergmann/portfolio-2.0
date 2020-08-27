@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bergmann</title>
+
+    <!-- Favicon -->
+    
+    <!-- Materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialise CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar starts here -->
+
+ <section class="fnavbar">
+     <nav class="no-shadows #e0e0e0 white">
+        <div>
+
+          <!-- Website Logo -->
+
+          <a href="index.html" class="black-text text-darken-2 brand-logo center logo-fixed-font">Daniel Bergmann</a>
+          
+          <!-- hamburger menu -->
+          <ul id="slide-out" class="black-text text-darken #e0e0e0 sidenav">
+            <div class="flex-container">
+              <div class="row">
+                <li><img class="selfie" src="img/sjalfa.jpg" alt="my selfie"></li>
+                <li><p class="sidenav-close">// Daniel Bergmann is a web developement altmuligmand located in Reykjavik, Iceland</p></li>
+                <li><a class="sidenav-close" target="_blank" href="https://danielbergmann.me/podcast.html">Podcast - 丹哥说到底</a></li>
+              </div>
+            </div>  
+        </ul>
+        <!-- Hamburger -->
+        <a href="#" data-target="slide-out" class="nav-padding pushpin black-text sidenav-trigger show-on-large"><i class=" material-icons">menu</i></a>
+        </div>  
+    </nav>
+</section> 
+
+<!-- Navbar ends here -->
+
+
+<section>
+    <div class="white center">
+      <div class="row container element-center">
+        <div class="col s4 m8 l12">
+
+        <p class="grey-text text-darken-3">
+          So far there's not much to see, but here's a game of snake I put together that you can play while you wait for more content.
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="worm-container">
+        <canvas class="worm-canvas" id="myCanvas"></canvas>
+    </div>
+  </section>
+
+<section class="footer">
+  <footer class="footer-one">
+    <div class="container">
+      <div class="row">
+        <div class="element-center col s12 m12 l12">
+            <a href="https://danielbergmann.me/"><p class="grey-text">ánamaðkur</p></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+</body>
+
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<!-- Materialize JS script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Main JS -->
+<script src="js/app.js"></script>
+<!-- Snake JS -->
+<script src="js/snake.js"></script>
+</html>

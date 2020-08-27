@@ -1,0 +1,36 @@
+/* Flex container for the nav */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.row {
+  width: 100%;
+}
+
+.selfie {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.worm-container {
+  display: flex;
+  justify-content: center;
+}
+
+.worm-canvas {
+  border: 2px solid rgb(73, 59, 27);
+  background-color: #d5f1d4;
+  border-radius: 22px;
+  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+}
