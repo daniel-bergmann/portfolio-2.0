@@ -167,22 +167,46 @@ function main() {
 }
 requestAnimationFrame(main);
 
-
 // Play button for the snake game
 
 function play() {
-  var playGame = document.getElementById("more");
-  var btnText = document.getElementById("play");
+  var playGame = document.getElementById('more');
+  var btnText = document.getElementById('play');
 
-  if (dots.style.display === "none") {
-    playGame.style.display = "none";
+  if (dots.style.display === 'none') {
+    playGame.style.display = 'none';
   } else {
-    btnText.style.display = "none";
-    playGame.style.display = "flex";
-    playGame.style.justifyContent = "center";
+    btnText.style.display = 'none';
+    playGame.style.display = 'flex';
+    playGame.style.justifyContent = 'center';
   }
 }
 
+// function so that the window wont scroll down while playing the game
 
-
-
+var keys = {};
+window.addEventListener(
+  'keydown',
+  function (e) {
+    keys[e.keyCode] = true;
+    switch (e.keyCode) {
+      case 37:
+      case 39:
+      case 38:
+      case 40: // Arrow keys
+      case 32:
+        e.preventDefault();
+        break; // Space
+      default:
+        break; // do not block other keys
+    }
+  },
+  false
+);
+window.addEventListener(
+  'keyup',
+  function (e) {
+    keys[e.keyCode] = false;
+  },
+  false
+);
