@@ -73,11 +73,11 @@ const orange = {
   x: cvs.width / 4,
   x: cvs.width / 5,
   y: cvs.height / 4,
-  r: 7,
+  r: 40,
 
   draw: function () {
     ctx.beginPath();
-    ctx.fillStyle = '#f59542';
+    ctx.fillStyle = '#202820 ';
     ctx.arc(this.x, this.y, this.r, 0, 2 * Math.PI);
     ctx.fill();
     ctx.closePath();
@@ -91,7 +91,7 @@ const snake = {
   position: [{ x: cvs.width / 2, y: cvs.height / 2 }],
 
   draw: function () {
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = 'white';
     for (let i = 0; i < this.position.length; i++) {
       let p = this.position[i];
       ctx.beginPath();
@@ -166,3 +166,23 @@ function main() {
   requestAnimationFrame(main);
 }
 requestAnimationFrame(main);
+
+
+// Play button for the snake game
+
+function play() {
+  var playGame = document.getElementById("more");
+  var btnText = document.getElementById("play");
+
+  if (dots.style.display === "none") {
+    playGame.style.display = "none";
+  } else {
+    btnText.style.display = "none";
+    playGame.style.display = "flex";
+    playGame.style.justifyContent = "center";
+  }
+}
+
+
+
+

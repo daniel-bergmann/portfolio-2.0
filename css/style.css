@@ -1,6 +1,36 @@
+
+/* Main stylings */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #171717;;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility classes */
+.centered-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* classes for various things */
+
 /* Flex container for the nav */
 
-.flex-container {
+.nav-flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,29 +38,50 @@
   margin: 0;
   margin-right: 20px;
   margin-left: 20px;
-  list-style: none;
 }
 
-.row {
-  width: 100%;
+/* to remove the shadow of materialize CSS nav */
+.no-shadows {
+  box-shadow: none!important;
+  background: #171717;
 }
 
+/* Selfie in navbar */
 .selfie {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   margin-left: 60px;
   margin-top: 30px;
+  border: solid 1px grey;
 }
 
-.worm-container {
+/* snake game */
+
+.hero-display {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 70vh;
 }
 
+/* canvas drop shadow, bg color et.c.. */
 .worm-canvas {
-  border: 2px solid rgb(73, 59, 27);
-  background-color: #d5f1d4;
+  border: 2px solid rgb(163, 163, 163);
+  background: url("https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
   border-radius: 22px;
-  box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+/* For the play game button */
+#more {
+  display: none;
 }

@@ -9,67 +9,70 @@
     
     <!-- Materialize icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialise CDN -->
+
+    <!-- Materialise CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Skeleton CSS CSN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bg-meteor.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="lines">
+
+  <!-- This is the meteor effect in the background -->
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
 
   <!-- Navbar starts here -->
 
  <section class="fnavbar">
-     <nav class="no-shadows #e0e0e0 white">
+     <nav class="no-shadows #e0e0e0">
         <div>
 
-          <!-- Website Logo -->
-
-          <a href="index.html" class="black-text text-darken-2 brand-logo center logo-fixed-font">Daniel Bergmann</a>
-          
           <!-- hamburger menu -->
-          <ul id="slide-out" class="black-text text-darken #e0e0e0 sidenav">
-            <div class="flex-container">
+          <ul id="slide-out" class="no-shadows grey-text text-darken #e0e0e0 sidenav">
+            <div class="nav-flex-container">
               <div class="row">
                 <li><img class="selfie" src="img/sjalfa.jpg" alt="my selfie"></li>
                 <li><p class="sidenav-close">// Daniel Bergmann is a web developement altmuligmand located in Reykjavik, Iceland</p></li>
-                <li><a class="sidenav-close" target="_blank" href="https://danielbergmann.me/podcast.html">Podcast - 丹哥说到底</a></li>
+                <li><a class="grey-text sidenav-close" target="_blank" href="https://open.spotify.com/show/0TCY2gUKd8W4ZElWHfpVKI?si=_50X0e76QSCO_3_5ibdd8A">Podcast - 丹哥说到底</a></li>
               </div>
             </div>  
         </ul>
         <!-- Hamburger -->
-        <a href="#" data-target="slide-out" class="nav-padding pushpin black-text sidenav-trigger show-on-large"><i class=" material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="nav-padding pushpin white-text sidenav-trigger show-on-large"><i class=" material-icons">menu</i></a>
         </div>  
     </nav>
-</section> 
+</section>
 
 <!-- Navbar ends here -->
 
-
 <section>
-    <div class="white center">
-      <div class="row container element-center">
-        <div class="col s4 m8 l12">
-
-        <p class="grey-text text-darken-3">
-          So far there's not much to see, but here's a game of snake I put together that you can play while you wait for more content.
-        </p>
-      </div>
+    <div class="container hero-display">
+      <div class="row">
+        <div class="col s12 m12 l12 center align">
+          <h4 class="grey-text">Lead the worm through the wormhole</h4>
+          <span id="dots"></span><span id="more">
+            <canvas class="worm-canvas" id="myCanvas"></canvas>
+          </span> 
+            <button onclick="play()" id="play">Play Game</button>
+        </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <section>
-    <div class="worm-container">
-        <canvas class="worm-canvas" id="myCanvas"></canvas>
-    </div>
-  </section>
+<!-- Footer -->
 
 <section class="footer">
-  <footer class="footer-one">
+  <footer class="hero-display">
     <div class="container">
       <div class="row">
-        <div class="element-center col s12 m12 l12">
-            <a href="https://danielbergmann.me/"><p class="grey-text">ánamaðkur</p></a>
+        <div class="col s12 m12 l12 center align">
+            <a href="https://danielbergmann.me/"><p class="grey-text">Created by Daniel Bergmann</p></a>
         </div>
       </div>
     </div>
