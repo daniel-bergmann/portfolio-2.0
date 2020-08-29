@@ -6,6 +6,11 @@
     <title>Daniel Bergmann</title>
 
     <!-- Favicon -->
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     
     <!-- Materialize icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,27 +44,39 @@
               <div class="row">
                 <li><img class="selfie" src="img/sjalfa.jpg" alt="my selfie"></li>
                 <li><p class="sidenav-close">// Daniel Bergmann is a web developement altmuligmand located in Reykjavik, Iceland</p></li>
-                <li><a class="grey-text sidenav-close" target="_blank" href="https://open.spotify.com/show/0TCY2gUKd8W4ZElWHfpVKI?si=_50X0e76QSCO_3_5ibdd8A">Podcast - 丹哥说到底</a></li>
+                
+                <div class="social-container">
+                  <li><a class="grey-text sidenav-close" target="_blank" href="https://open.spotify.com/show/0TCY2gUKd8W4ZElWHfpVKI?si=_50X0e76QSCO_3_5ibdd8A"><i class="grey-text fab fa-spotify"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/daniel-bergmann-1449bb1b1/"><i class="grey-text fab fa-linkedin-in"></i></a></li>
+                  <li><a href="https://twitter.com/danielbergmannn"><i class="grey-text fab fa-twitter"></i></a></li>
+                  <li><a href="https://dribbble.com/danielbergmann"><i class="grey-text fab fa-dribbble"></i></a></li>
+                </div>
+
+              </div>
               </div>
             </div>  
         </ul>
         <!-- Hamburger -->
-        <a href="#" data-target="slide-out" class="nav-padding pushpin white-text sidenav-trigger show-on-large"><i class=" material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="nav-hamburger-styling pushpin orange-text sidenav-trigger show-on-large"><i class="fas fa-hamburger"></i></a>
         </div>  
     </nav>
 </section>
 
 <!-- Navbar ends here -->
 
+
+  <!-- Wormhole canvas -->
 <section>
-    <div class="container hero-display">
+    <div class="container hero-display-wormhole">
       <div class="row">
         <div class="col s12 m12 l12 center align">
-          <h4 class="grey-text">Lead the worm through the wormhole</h4>
+          <h1 class="wormhole-logo grey-text">Wormhole</h1>
+          <p class="grey-text">Lead the spaceworm through the <span class="wormhole-logo">Wormhole</span> and see how it mutates by entering each spacetime. </p>
           <span id="dots"></span><span id="more">
             <canvas class="worm-canvas" id="myCanvas"></canvas>
           </span> 
             <button onclick="play()" id="play">Play Game</button>
+            <p class="grey-text">Control with arrow keys.</p>
         </div>
       </div>
     </div>
@@ -68,7 +85,7 @@
 <!-- Footer -->
 
 <section class="footer">
-  <footer class="hero-display">
+  <footer class="hero-display-footer">
     <div class="container">
       <div class="row">
         <div class="col s12 m12 l12 center align">

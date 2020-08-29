@@ -46,6 +46,11 @@ a {
   background: #171717;
 }
 
+.nav-hamburger-styling i {
+  padding-top: 20px;
+  font-size: 30px;
+} 
+
 /* Selfie in navbar */
 .selfie {
   width: 120px;
@@ -53,16 +58,26 @@ a {
   border-radius: 50%;
   margin-left: 60px;
   margin-top: 30px;
-  border: solid 1px grey;
+  border: solid 2px grey;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* snake game */
 
-.hero-display {
+.hero-display-wormhole {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 90vh;
+}
+
+.wormhole-logo {
+  font-family: 'Modak', cursive;
 }
 
 /* canvas drop shadow, bg color et.c.. */
@@ -84,4 +99,13 @@ a {
 /* For the play game button */
 #more {
   display: none;
+}
+
+
+/* footer */
+.hero-display-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
 }
