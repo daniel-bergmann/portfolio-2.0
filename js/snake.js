@@ -91,7 +91,7 @@ const snake = {
   position: [{ x: cvs.width / 2, y: cvs.height / 2 }],
 
   draw: function () {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'teal';
     for (let i = 0; i < this.position.length; i++) {
       let p = this.position[i];
       ctx.beginPath();
